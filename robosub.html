@@ -26,7 +26,7 @@
         <a class="text-link" href="index-en.html#projecten">← All projects</a>
         <p class="eyebrow">QUEST / HU ROBOSUB / 2026</p>
         <h1>Helping a robot<br>see <em>underwater.</em></h1>
-        <p class="intro">Camera and sensor data only become useful when the system can work with them. At HU RoboSub, I helped build that connection for Aurora.</p>
+        <p class="intro">Camera and sensor data only become useful when the system can work with them. At HU Robosub, I helped build that connection for Aurora.</p>
         <div class="project-meta">
           <div>
             <small>My role</small>
@@ -77,6 +77,8 @@
           <figure class="evidence">
             <img src="images/portfolio/markers.webp" alt="Project test image showing detected ArUco markers" loading="lazy">
             <figcaption>From camera footage to recognised markers. A test image from my project documentation.</figcaption>
+            <img src="images/aruco_result.jpg" alt="Underwater image showing detected ArUco marker" loading="lazy">
+            <figcaption>A recognised ArUco marker in an underwater image.</figcaption>
           </figure>
           <section id="techniek">
             <p class="eyebrow">04 / A CLOSER LOOK</p>
@@ -89,6 +91,8 @@
               <details>
                 <summary>DVL → control<span aria-hidden="true">+</span></summary>
                 <p>DVL → Ethernet → Python / ROS 2 → Micro-XRCE-DDS → PX4. The DVL uses sound to measure velocity; this connection makes the readings available to the controller.</p>
+                <img src="images/mainbrain_communication.png" alt="Communication schema in main brain." loading="lazy">
+                <figcaption>From DVL measurements to controller commands. A schema to show the process.</figcaption>
               </details>
               <details>
                 <summary>Computer vision<span aria-hidden="true">+</span></summary>
