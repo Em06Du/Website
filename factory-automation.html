@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Emma Dullemond’s portfolio. Electrical engineering, industrial automation and underwater robotics.">
+    <meta name="theme-color" content="#f6f5ef">
+    <title>Factory Automation | Emma Dullemond</title>
+    <link rel="icon" href="images/Logo_ESD.png">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <link rel="alternate" hreflang="nl" href="factory-automation-nl.html">
+  </head>
+  <body id="top">
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="header">
+      <a class="brand" href="index-en.html" aria-label="Emma Dullemond home"><img src="images/Logo_ESD.png" alt="ESD — Emma Dullemond" width="64" height="64"></a>
+      <nav aria-label="Main navigation">
+        <a href="index-en.html#projecten">Projects</a>
+        <a href="index-en.html#over-mij">About me</a>
+        <a href="index-en.html#contact">Contact <span aria-hidden="true">↗</span></a>
+        <a class="language" href="factory-automation-nl.html" hreflang="nl" lang="nl" aria-label="Bekijk in het Nederlands">NL</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="detail-hero wrap">
+        <a class="text-link" href="index-en.html#projecten">← All projects</a>
+        <p class="eyebrow">STUDY PROJECT / FACTORY AUTOMATION</p>
+        <h1>One production line.<br>Working <em>together.</em></h1>
+        <p class="intro">A production line works when each step connects to the next. In this third-year project, I worked on designing a line to feed pallets, remove cans and stack empty pallets.</p>
+        <a class="button factory-jump" href="#model">Explore the factory in 3D ↓</a>
+      </section>
+      <section class="wrap factory-viewer-section" id="model" aria-labelledby="model-heading">
+        <h2 id="model-heading">Explore the factory in 3D</h2>
+        <p class="viewer-hint">Interactive model · approximately 21 MB · loads on request</p>
+        <div class="factory-viewer" data-factory-viewer data-loading="Loading the 3D model…" data-ready="The 3D model is ready. Drag to rotate and scroll or pinch to zoom." data-error="The model could not be loaded. Try again or download the GLB file." data-retry="Try again">
+          <div class="model-stage" data-model-stage>
+            <img class="model-poster" src="images/portfolio/factory-layout.webp" alt="Factory line design with pallet buffers, a depalletizer and a palletizer">
+          </div>
+          <div class="model-overlay" data-model-overlay>
+            <button class="button" type="button" data-load-model>Load the 3D model ↗</button>
+          </div>
+        </div>
+        <p class="viewer-status" role="status" aria-live="polite" data-model-status>Drag to rotate · Scroll or pinch to zoom</p>
+        <div class="viewer-controls">
+          <button type="button" class="viewer-button" data-reset-model disabled>Reset view</button>
+          <button type="button" class="viewer-button" data-rotate-model data-start="Auto-rotate" data-stop="Stop rotating" aria-pressed="false" disabled>Auto-rotate</button>
+          <a class="text-link" href="models/Fabriek_lijn_web.glb" download>Download the GLB model ↗</a>
+        </div>
+      </section>
+      <section class="case-body wrap">
+        <nav class="case-index" aria-label="On this page">
+          <a href="#uitdaging">01 / The challenge</a>
+          <a href="#werking">02 / How the line works</a>
+          <a href="#ontwerp">03 / From sequence to design</a>
+          <a href="#techniek">04 / Technology</a>
+          <div class="tags"><span>Factory automation</span><span>Machine design</span><span>3D</span></div>
+        </nav>
+        <div class="case-content">
+          <section id="uitdaging">
+            <p class="eyebrow">01 / THE CHALLENGE</p>
+            <h2>The challenge</h2>
+            <p>The line processes pallets of cans in a defined sequence. Buffers manage incoming pallets, a depalletizer removes cans layer by layer and a palletizer collects the empty pallets. Sensors and drives must work together at the right moment.</p>
+          </section>
+          <section id="werking">
+            <p class="eyebrow">02 / HOW THE LINE WORKS</p>
+            <h2>How the line works</h2>
+            <ol class="factory-process">
+              <li><h3>Feed and buffer</h3><p>A pallet enters on the roller conveyor. Five buffers only pass it on when the next section has space.</p></li>
+              <li><h3>Remove the cans</h3><p>The depalletizer lifts the pallet. A vacuum system removes the cardboard sheets before a pusher transfers each layer of cans onto the outfeed conveyor.</p></li>
+              <li><h3>Stack empty pallets</h3><p>The empty pallet moves to the palletizer. Its lift stacks the pallets so a forklift can remove them together.</p></li>
+            </ol>
+          </section>
+          <section id="ontwerp">
+            <p class="eyebrow">03 / FROM SEQUENCE TO DESIGN</p>
+            <h2>From sequence to design</h2>
+            <p>The project documents describe the machine sequence, component selection, electrical design and mechanical design. These elements need to work as one line, from sensor positions and motor selection to the handover between stations.</p>
+            <figure class="factory-diagram">
+              <a href="images/portfolio/factory-layout.webp"><img src="images/portfolio/factory-layout.webp" alt="Factory line design with pallet buffers, a depalletizer and a palletizer" loading="lazy"></a>
+              <figcaption>An overview from the project documentation, showing the material flow and stations.</figcaption>
+            </figure>
+          </section>
+          <section id="techniek">
+            <p class="eyebrow">04 / A CLOSER LOOK</p>
+            <h2>A closer look at the technology</h2>
+            <div class="accordions">
+              <details><summary>Sensors and sequence<span aria-hidden="true">+</span></summary><p>Photoelectric sensors check pallet presence and position. Distance sensors monitor lift height. Each step depends on the state of the next station.</p></details>
+              <details><summary>Drives and movement<span aria-hidden="true">+</span></summary><p>The documentation describes conveyor motors, servo drives for the lifts and linear actuators for components including gates and gripping pins.</p></details>
+              <details><summary>Safety in the design<span aria-hidden="true">+</span></summary><p>The design considers guarding, emergency stops, access for pallet removal and a brake on the depalletizer lift. These are design provisions; the 3D model does not demonstrate a validated safety function.</p></details>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="next-project wrap">
+        <p class="eyebrow">NEXT PROJECT</p>
+        <a href="robosub.html">Helping an underwater robot see. <span>↗</span></a>
+      </section>
+      <section class="mini-contact wrap">
+        <p>Want to know more about this project?</p>
+        <a class="text-link" href="index-en.html#contact">Get in touch ↗</a>
+      </section>
+    </main>
+    <footer>
+      <span>© Emma Dullemond · Built around practical engineering.</span>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+    <script src="assets/js/factory-viewer.js" defer></script>
+  </body>
+</html>

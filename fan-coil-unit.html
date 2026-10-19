@@ -1,1 +1,115 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Emma Dullemond’s portfolio. Electrical engineering, industrial automation and underwater robotics."><meta name="theme-color" content="#f6f5ef"><title>Fan Coil Unit | Emma Dullemond</title><link rel="icon" href="images/Logo_ESD.png"><link rel="stylesheet" href="assets/css/portfolio.css"><link rel="alternate" hreflang="nl" href="fan-coil-unit-nl.html"></head><body id="top"><a class="skip" href="#main">Skip to content</a><header class="header"><a class="brand" href="index-en.html" aria-label="Emma Dullemond home">emma<span>.</span><small>DULLEMOND</small></a><nav aria-label="Main navigation"><a href="index-en.html#projecten">Projects</a><a href="index-en.html#over-mij">About me</a><a href="index-en.html#contact">Contact <span aria-hidden="true">↗</span></a><a class="language" href="fan-coil-unit-nl.html" hreflang="nl" lang="nl" aria-label="Bekijk in het Nederlands">NL</a></nav></header><main id="main"><section class="detail-hero wrap"><a class="text-link" href="index-en.html#projecten">← All projects</a><p class="eyebrow">INTERNSHIP / GOOILAND ELEKTRO / 2025</p><h1>Climate control.<br>Its own <em>controller.</em></h1><p class="intro">During my twenty-week internship at Gooiland Elektro, I developed an independent Fan Coil Unit controller, including an interface for operation and monitoring.</p><div class="project-meta"><div><small>My role</small>Research, control software & HMI</div><div><small>Context</small>Individual internship assignment with technical guidance</div></div><img class="detail-image fcu" src="images/portfolio/fcu.webp" alt="The Fan Coil Unit used in my internship project" fetchpriority="high"></section><section class="case-body wrap"><div class="case-index"><p class="eyebrow">IN THIS PROJECT</p><a href="#uitdaging">01 / The challenge</a><a href="#bijdrage">02 / My contribution</a><a href="#resultaat">03 / The outcome</a><a href="#techniek">04 / Technology</a><div class="tags"><span>CODESYS</span><span>HMI</span><span>Modbus TCP</span><span>Remote I/O</span><span>Automation</span></div></div><div class="case-content"><section id="uitdaging"><p class="eyebrow">01 / THE CHALLENGE</p><h2>The challenge</h2><p>A Fan Coil Unit heats or cools a room. When multiple units depend on one central PLC, a controller problem can affect several rooms. My task was to research and realise a locally operating solution with a clear operator interface.</p></section><section id="bijdrage"><p class="eyebrow">02 / MY CONTRIBUTION</p><h2>My contribution</h2><ol class="contributions"><li><p>I compared hardware options and communication protocols and supported my recommendations with a cost overview.</p></li><li><p>I developed the controller in CODESYS and designed the HMI for automatic and manual operation, temperature settings and alarms.</p></li><li><p>I connected the Weintek HMI with CODESYS to Weidmüller remote I/O using Modbus TCP, and delivered a manual, wiring diagram, test plan and development recommendations.</p></li></ol></section><section id="resultaat"><p class="eyebrow">03 / THE OUTCOME</p><h2>The outcome</h2><p>The project produced a working setup combining the FCU controls and operator interface. The documentation supports handover and further development.</p></section><section id="techniek"><p class="eyebrow">04 / A CLOSER LOOK</p><h2>A closer look at the technology</h2><div class="accordions"><details><summary>HMI + CODESYS<span aria-hidden="true">+</span></summary><p>A Weintek cMT2058XH with CODESYS provides the operator interface and local control logic. It communicates with Weidmüller remote I/O over Modbus TCP.</p></details><details><summary>Control conditions<span aria-hidden="true">+</span></summary><p>The application controls the fan, cooling valve and heater. The design includes fan-running conditions before heating can start and a fan run-on period.</p></details><details><summary>From cost research to test setup<span aria-hidden="true">+</span></summary><p>The original hardware target was below €500. An investigated M120E concept came to approximately €350, but was not the realised setup. At the supervisor’s request, available Weidmüller I/O was used; the presentation estimates this combination at approximately €1,300.</p></details></div></section><section><h2>What I learned</h2><p>I gained experience across the development process, from requirements and component selection to programming, wiring and handover. I also learned to balance software structure with the needs of the application and to respond when project decisions change the original plan.</p></section></div></section><section class="next-project wrap"><p class="eyebrow">NEXT PROJECT</p><a href="robosub.html">Helping an underwater robot see. <span>↗</span></a></section><section class="mini-contact wrap"><p>Want to learn more about my projects or discuss a graduation assignment? Send me a message on LinkedIn.</p><a class="text-link" href="index-en.html#contact">Get in touch ↗</a></section></main><footer><span>© Emma Dullemond · Built around practical engineering.</span><a href="#top">Back to top ↑</a></footer></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Emma Dullemond’s portfolio. Electrical engineering, industrial automation and underwater robotics.">
+    <meta name="theme-color" content="#f6f5ef">
+    <title>Fan Coil Unit | Emma Dullemond</title>
+    <link rel="icon" href="images/Logo_ESD.png">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <link rel="alternate" hreflang="nl" href="fan-coil-unit-nl.html">
+  </head>
+  <body id="top">
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="header">
+      <a class="brand" href="index-en.html" aria-label="Emma Dullemond home"><img src="images/Logo_ESD.png" alt="ESD — Emma Dullemond" width="64" height="64"></a>
+      <nav aria-label="Main navigation">
+        <a href="index-en.html#projecten">Projects</a>
+        <a href="index-en.html#over-mij">About me</a>
+        <a href="index-en.html#contact">Contact <span aria-hidden="true">↗</span></a>
+        <a class="language" href="fan-coil-unit-nl.html" hreflang="nl" lang="nl" aria-label="Bekijk in het Nederlands">NL</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="detail-hero wrap">
+        <a class="text-link" href="index-en.html#projecten">← All projects</a>
+        <p class="eyebrow">INTERNSHIP / GOOILAND ELEKTRO / 2025</p>
+        <h1>Climate control.<br>Its own <em>controller.</em></h1>
+        <p class="intro">During my twenty-week internship at Gooiland Elektro, I developed an independent Fan Coil Unit controller, including an interface for operation and monitoring.</p>
+        <div class="project-meta">
+          <div>
+            <small>My role</small>
+            Research, control software & HMI
+          </div>
+          <div>
+            <small>Context</small>
+            Individual internship assignment with technical guidance
+          </div>
+        </div>
+        <img class="detail-image fcu" src="images/portfolio/fcu.webp" alt="The Fan Coil Unit used in my internship project" fetchpriority="high">
+      </section>
+      <section class="case-body wrap">
+        <div class="case-index">
+          <p class="eyebrow">IN THIS PROJECT</p>
+          <a href="#uitdaging">01 / The challenge</a>
+          <a href="#bijdrage">02 / My contribution</a>
+          <a href="#resultaat">03 / The outcome</a>
+          <a href="#techniek">04 / Technology</a>
+          <div class="tags">
+            <span>CODESYS</span>
+            <span>HMI</span>
+            <span>Modbus TCP</span>
+            <span>Remote I/O</span>
+            <span>Automation</span>
+          </div>
+        </div>
+        <div class="case-content">
+          <section id="uitdaging">
+            <p class="eyebrow">01 / THE CHALLENGE</p>
+            <h2>The challenge</h2>
+            <p>A Fan Coil Unit heats or cools a room. When multiple units depend on one central PLC, a controller problem can affect several rooms. My task was to research and realise a locally operating solution with a clear operator interface.</p>
+          </section>
+          <section id="bijdrage">
+            <p class="eyebrow">02 / MY CONTRIBUTION</p>
+            <h2>My contribution</h2>
+            <ol class="contributions">
+              <li><p>I compared hardware options and communication protocols and supported my recommendations with a cost overview.</p></li>
+              <li><p>I developed the controller in CODESYS and designed the HMI for automatic and manual operation, temperature settings and alarms.</p></li>
+              <li><p>I connected the Weintek HMI with CODESYS to Weidmüller remote I/O using Modbus TCP, and delivered a manual, wiring diagram, test plan and development recommendations.</p></li>
+            </ol>
+          </section>
+          <section id="resultaat">
+            <p class="eyebrow">03 / THE OUTCOME</p>
+            <h2>The outcome</h2>
+            <p>The project produced a working setup combining the FCU controls and operator interface. The documentation supports handover and further development.</p>
+          </section>
+          <section id="techniek">
+            <p class="eyebrow">04 / A CLOSER LOOK</p>
+            <h2>A closer look at the technology</h2>
+            <div class="accordions">
+              <details>
+                <summary>HMI + CODESYS<span aria-hidden="true">+</span></summary>
+                <p>A Weintek cMT2058XH with CODESYS provides the operator interface and local control logic. It communicates with Weidmüller remote I/O over Modbus TCP.</p>
+              </details>
+              <details>
+                <summary>Control conditions<span aria-hidden="true">+</span></summary>
+                <p>The application controls the fan, cooling valve and heater. The design includes fan-running conditions before heating can start and a fan run-on period.</p>
+              </details>
+              <details>
+                <summary>From cost research to test setup<span aria-hidden="true">+</span></summary>
+                <p>The original hardware target was below €500. An investigated M120E concept came to approximately €350, but was not the realised setup. At the supervisor’s request, available Weidmüller I/O was used; the presentation estimates this combination at approximately €1,300.</p>
+              </details>
+            </div>
+          </section>
+          <section>
+            <h2>What I learned</h2>
+            <p>I gained experience across the development process, from requirements and component selection to programming, wiring and handover. I also learned to balance software structure with the needs of the application and to respond when project decisions change the original plan.</p>
+          </section>
+        </div>
+      </section>
+      <section class="next-project wrap">
+        <p class="eyebrow">NEXT PROJECT</p>
+        <a href="factory-automation.html">A factory line working as one. <span>↗</span></a>
+      </section>
+      <section class="mini-contact wrap">
+        <p>Want to learn more about my projects or discuss a graduation assignment? Send me a message on LinkedIn.</p>
+        <a class="text-link" href="index-en.html#contact">Get in touch ↗</a>
+      </section>
+    </main>
+    <footer>
+      <span>© Emma Dullemond · Built around practical engineering.</span>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>

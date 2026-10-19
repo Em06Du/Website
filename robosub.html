@@ -1,1 +1,119 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Emma Dullemond’s portfolio. Electrical engineering, industrial automation and underwater robotics."><meta name="theme-color" content="#f6f5ef"><title>HU RoboSub | Emma Dullemond</title><link rel="icon" href="images/Logo_ESD.png"><link rel="stylesheet" href="assets/css/portfolio.css"><link rel="alternate" hreflang="nl" href="robosub-nl.html"></head><body id="top"><a class="skip" href="#main">Skip to content</a><header class="header"><a class="brand" href="index-en.html" aria-label="Emma Dullemond home">emma<span>.</span><small>DULLEMOND</small></a><nav aria-label="Main navigation"><a href="index-en.html#projecten">Projects</a><a href="index-en.html#over-mij">About me</a><a href="index-en.html#contact">Contact <span aria-hidden="true">↗</span></a><a class="language" href="robosub-nl.html" hreflang="nl" lang="nl" aria-label="Bekijk in het Nederlands">NL</a></nav></header><main id="main"><section class="detail-hero wrap"><a class="text-link" href="index-en.html#projecten">← All projects</a><p class="eyebrow">QUEST / HU ROBOSUB / 2026</p><h1>Helping a robot<br>see <em>underwater.</em></h1><p class="intro">Camera and sensor data only become useful when the system can work with them. At HU RoboSub, I helped build that connection for Aurora.</p><div class="project-meta"><div><small>My role</small>Camera, computer vision & DVL integration</div><div><small>Context</small>Multidisciplinary student team</div></div><img class="detail-image aurora" src="images/portfolio/aurora.webp" alt="Aurora, the HU RoboSub underwater robot, showing its electronics and thrusters" fetchpriority="high"></section><section class="case-body wrap"><div class="case-index"><p class="eyebrow">IN THIS PROJECT</p><a href="#uitdaging">01 / The challenge</a><a href="#bijdrage">02 / My contribution</a><a href="#resultaat">03 / The outcome</a><a href="#techniek">04 / Technology</a><div class="tags"><span>Python</span><span>OpenCV</span><span>ROS 2</span><span>NVIDIA Jetson</span><span>PX4</span></div></div><div class="case-content"><section id="uitdaging"><p class="eyebrow">01 / THE CHALLENGE</p><h2>The challenge</h2><p>Water changes colours and reflections make camera images difficult to interpret. The robot also needs information about its movement. For the competition in Norway, the team worked on detecting yellow pipes and ArUco markers: square patterns with individual IDs.</p></section><section id="bijdrage"><p class="eyebrow">02 / MY CONTRIBUTION</p><h2>My contribution</h2><ol class="contributions"><li><p>I configured the Arducam camera on the NVIDIA Jetson and worked on streaming live video to QGroundControl on the controller.</p></li><li><p>I worked with OpenCV to detect ArUco markers underwater, tested image processing under different lighting conditions and collected underwater images for pipe detection.</p></li><li><p>I worked on DVL integration, from physical connectivity and Python software to passing data through ROS 2 and DDS to the PX4 controller, building on previous team members’ work.</p></li></ol></section><section id="resultaat"><p class="eyebrow">03 / THE OUTCOME</p><h2>The outcome</h2><p>ArUco markers were detected underwater, live footage became available on the controller and DVL measurements reached the PX4. Water-basin tests verified the data connection. These connections provide building blocks for further development of autonomous functions.</p></section><figure class="evidence"><img src="images/portfolio/markers.webp" alt="Project test image showing detected ArUco markers" loading="lazy"><figcaption>From camera footage to recognised markers. A test image from my project documentation.</figcaption></figure><section id="techniek"><p class="eyebrow">04 / A CLOSER LOOK</p><h2>A closer look at the technology</h2><div class="accordions"><details><summary>Camera → controller<span aria-hidden="true">+</span></summary><p>Arducam AR0234 → NVIDIA Jetson → GStreamer / UDP → QGroundControl. Image conversion and rotation made the footage usable by the operator.</p></details><details><summary>DVL → control<span aria-hidden="true">+</span></summary><p>DVL → Ethernet → Python / ROS 2 → Micro-XRCE-DDS → PX4. The DVL uses sound to measure velocity; this connection makes the readings available to the controller.</p></details><details><summary>Computer vision<span aria-hidden="true">+</span></summary><p>OpenCV for ArUco detection. I investigated colour and line detection for yellow pipes. Wesse developed the trained YOLO model further using collected images; reflections remained a challenge.</p></details></div></section><section><h2>What I learned</h2><p>I learned that an algorithm alone does not make a working robot. Drivers, wiring, messages and test conditions must all fit together. Collaboration and documenting those connections mattered as much as writing code.</p></section></div></section><section class="next-project wrap"><p class="eyebrow">NEXT PROJECT</p><a href="fan-coil-unit.html">An independent Fan Coil Unit controller. <span>↗</span></a></section><section class="mini-contact wrap"><p>Want to learn more about my projects or discuss a graduation assignment? Send me a message on LinkedIn.</p><a class="text-link" href="index-en.html#contact">Get in touch ↗</a></section></main><footer><span>© Emma Dullemond · Built around practical engineering.</span><a href="#top">Back to top ↑</a></footer></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Emma Dullemond’s portfolio. Electrical engineering, industrial automation and underwater robotics.">
+    <meta name="theme-color" content="#f6f5ef">
+    <title>HU RoboSub | Emma Dullemond</title>
+    <link rel="icon" href="images/Logo_ESD.png">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <link rel="alternate" hreflang="nl" href="robosub-nl.html">
+  </head>
+  <body id="top">
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="header">
+      <a class="brand" href="index-en.html" aria-label="Emma Dullemond home"><img src="images/Logo_ESD.png" alt="ESD — Emma Dullemond" width="64" height="64"></a>
+      <nav aria-label="Main navigation">
+        <a href="index-en.html#projecten">Projects</a>
+        <a href="index-en.html#over-mij">About me</a>
+        <a href="index-en.html#contact">Contact <span aria-hidden="true">↗</span></a>
+        <a class="language" href="robosub-nl.html" hreflang="nl" lang="nl" aria-label="Bekijk in het Nederlands">NL</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="detail-hero wrap">
+        <a class="text-link" href="index-en.html#projecten">← All projects</a>
+        <p class="eyebrow">QUEST / HU ROBOSUB / 2026</p>
+        <h1>Helping a robot<br>see <em>underwater.</em></h1>
+        <p class="intro">Camera and sensor data only become useful when the system can work with them. At HU RoboSub, I helped build that connection for Aurora.</p>
+        <div class="project-meta">
+          <div>
+            <small>My role</small>
+            Camera, computer vision & DVL integration
+          </div>
+          <div>
+            <small>Context</small>
+            Multidisciplinary student team
+          </div>
+        </div>
+        <img class="detail-image aurora" src="images/portfolio/aurora.webp" alt="Aurora, the HU RoboSub underwater robot, showing its electronics and thrusters" fetchpriority="high">
+      </section>
+      <section class="case-body wrap">
+        <div class="case-index">
+          <p class="eyebrow">IN THIS PROJECT</p>
+          <a href="#uitdaging">01 / The challenge</a>
+          <a href="#bijdrage">02 / My contribution</a>
+          <a href="#resultaat">03 / The outcome</a>
+          <a href="#techniek">04 / Technology</a>
+          <div class="tags">
+            <span>Python</span>
+            <span>OpenCV</span>
+            <span>ROS 2</span>
+            <span>NVIDIA Jetson</span>
+            <span>PX4</span>
+          </div>
+        </div>
+        <div class="case-content">
+          <section id="uitdaging">
+            <p class="eyebrow">01 / THE CHALLENGE</p>
+            <h2>The challenge</h2>
+            <p>Water changes colours and reflections make camera images difficult to interpret. The robot also needs information about its movement. For the competition in Norway, the team worked on detecting yellow pipes and ArUco markers: square patterns with individual IDs.</p>
+          </section>
+          <section id="bijdrage">
+            <p class="eyebrow">02 / MY CONTRIBUTION</p>
+            <h2>My contribution</h2>
+            <ol class="contributions">
+              <li><p>I configured the Arducam camera on the NVIDIA Jetson and worked on streaming live video to QGroundControl on the controller.</p></li>
+              <li><p>I worked with OpenCV to detect ArUco markers underwater, tested image processing under different lighting conditions and collected underwater images for pipe detection.</p></li>
+              <li><p>I worked on DVL integration, from physical connectivity and Python software to passing data through ROS 2 and DDS to the PX4 controller, building on previous team members’ work.</p></li>
+            </ol>
+          </section>
+          <section id="resultaat">
+            <p class="eyebrow">03 / THE OUTCOME</p>
+            <h2>The outcome</h2>
+            <p>ArUco markers were detected underwater, live footage became available on the controller and DVL measurements reached the PX4. Water-basin tests verified the data connection. These connections provide building blocks for further development of autonomous functions.</p>
+          </section>
+          <figure class="evidence">
+            <img src="images/portfolio/markers.webp" alt="Project test image showing detected ArUco markers" loading="lazy">
+            <figcaption>From camera footage to recognised markers. A test image from my project documentation.</figcaption>
+          </figure>
+          <section id="techniek">
+            <p class="eyebrow">04 / A CLOSER LOOK</p>
+            <h2>A closer look at the technology</h2>
+            <div class="accordions">
+              <details>
+                <summary>Camera → controller<span aria-hidden="true">+</span></summary>
+                <p>Arducam AR0234 → NVIDIA Jetson → GStreamer / UDP → QGroundControl. Image conversion and rotation made the footage usable by the operator.</p>
+              </details>
+              <details>
+                <summary>DVL → control<span aria-hidden="true">+</span></summary>
+                <p>DVL → Ethernet → Python / ROS 2 → Micro-XRCE-DDS → PX4. The DVL uses sound to measure velocity; this connection makes the readings available to the controller.</p>
+              </details>
+              <details>
+                <summary>Computer vision<span aria-hidden="true">+</span></summary>
+                <p>OpenCV for ArUco detection. I investigated colour and line detection for yellow pipes. Wesse developed the trained YOLO model further using collected images; reflections remained a challenge.</p>
+              </details>
+            </div>
+          </section>
+          <section>
+            <h2>What I learned</h2>
+            <p>I learned that an algorithm alone does not make a working robot. Drivers, wiring, messages and test conditions must all fit together. Collaboration and documenting those connections mattered as much as writing code.</p>
+          </section>
+        </div>
+      </section>
+      <section class="next-project wrap">
+        <p class="eyebrow">NEXT PROJECT</p>
+        <a href="fan-coil-unit.html">An independent Fan Coil Unit controller. <span>↗</span></a>
+      </section>
+      <section class="mini-contact wrap">
+        <p>Want to learn more about my projects or discuss a graduation assignment? Send me a message on LinkedIn.</p>
+        <a class="text-link" href="index-en.html#contact">Get in touch ↗</a>
+      </section>
+    </main>
+    <footer>
+      <span>© Emma Dullemond · Built around practical engineering.</span>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
