@@ -10,6 +10,8 @@ Mijn persoonlijke portfolio als student Elektrotechniek aan de Hogeschool Utrech
 - **Fan Coil Unit:** een zelfstandige besturing met CODESYS, een HMI en Modbus TCP, ontwikkeld tijdens mijn stage bij Gooiland Elektro.
 - **Factory Automation:** het ontwerp van een fabriekslijn met palletbuffers, een depalletizer en een palletizer. De projectpagina bevat een interactief 3D-model.
 
+- **Bestuursjaar Public Relations:** partnerrelaties, contractonderhandelingen, twee netwerkdagen en het helpen organiseren van de studiereis bij Ingenium Cabo Bianci, van september 2025 tot september 2026.
+
 De zelfbalancerende robot wordt daarnaast kort op de homepage genoemd.
 
 ## Opbouw
@@ -22,6 +24,7 @@ De website bestaat uit statische HTML, CSS en JavaScript. Er is geen framework, 
 | HU RoboSub | `robosub-nl.html` | `robosub.html` |
 | Fan Coil Unit | `fan-coil-unit-nl.html` | `fan-coil-unit.html` |
 | Factory Automation | `factory-automation-nl.html` | `factory-automation.html` |
+| Bestuursjaar Public Relations | `bestuursjaar-nl.html` | `bestuursjaar.html` |
 
 `index-nl.html` verwijst door naar de Nederlandse homepage. De oude `projects`- en `portfolio`-pagina’s verwijzen door naar de bijbehorende secties op de homepage.
 
