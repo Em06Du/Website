@@ -1292,3 +1292,21 @@ model-viewer {
     margin-top: 28px;
   }
 }
+
+
+/* Networking day promotional video */
+.board-video {
+  margin: 28px 0;
+}
+.board-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: #18272d;
+  border: 1px solid var(--line);
+}
+.board-video video:focus-visible {
+  outline: 3px solid var(--red);
+  outline-offset: 4px;
+}

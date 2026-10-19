@@ -35,6 +35,7 @@ De website bestaat uit statische HTML, CSS en JavaScript. Er is geen framework, 
 | `assets/js/factory-viewer.js` | Laden en bedienen van het 3D-model |
 | `assets/js/vendor/model-viewer.min.js` | De model-viewer-bibliotheek voor de 3D-weergave |
 | `images/` | Logo, foto’s en projectbeelden |
+| `videos/netwerkdag-promo.mp4` | Promovideo voor de netwerkdag, op de bestuursjaar-pagina’s |
 | `models/Fabriek_lijn_web.glb` | Het 3D-model van de fabriekslijn |
 | `.github/workflows/static.yml` | Publicatie via GitHub Pages |
 | `CNAME` | Het eigen domein voor GitHub Pages |
@@ -65,7 +66,7 @@ Google Fonts wordt extern geladen. De 3D-viewer kan aanvullende decoderbestanden
 
 Wijzigingen die naar de branch `main` worden gepusht, starten de bestaande GitHub Pages-workflow. De voortgang en eventuele fouten zijn zichtbaar onder **Actions** in de repository.
 
-De HTML-bestanden, `assets`, `images` en `models` staan direct in de hoofdmap van de repository. Upload dus de inhoud van de website en niet een extra bovenliggende map. Het `CNAME`-bestand bevat `emmadullemond.com`.
+De HTML-bestanden, `assets`, `images`, `videos` en `models` staan direct in de hoofdmap van de repository. Upload dus de inhoud van de website en niet een extra bovenliggende map. Het `CNAME`-bestand bevat `emmadullemond.com`.
 
 ## Herkomst en gebruikte middelen
 
