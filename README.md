@@ -62,6 +62,12 @@ Het fabrieksmodel is ongeveer 21 MB en wordt pas opgehaald nadat een bezoeker op
 
 Google Fonts wordt extern geladen. De 3D-viewer kan aanvullende decoderbestanden via internet ophalen voor het gecomprimeerde model.
 
+## Ontbrekende pagina’s
+
+`404.html` is de Nederlandse foutpagina voor GitHub Pages. Via de taalkeuze is `404-en.html` beschikbaar. De foutpagina gebruikt paden vanaf de hoofdmap, zodat ook bij een verkeerd adres in een submap de vormgeving en navigatie werken.
+
+De bestuursfoto wordt als WebP in drie formaten aangeboden. De browser kiest via `srcset` een passend formaat voor de homepage en de bestuursjaar-pagina’s.
+
 ## Publiceren
 
 Wijzigingen die naar de branch `main` worden gepusht, starten de bestaande GitHub Pages-workflow. De voortgang en eventuele fouten zijn zichtbaar onder **Actions** in de repository.
